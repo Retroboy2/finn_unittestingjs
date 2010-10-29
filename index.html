@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration form</title>
+	<style>
+	#error_container { color: red; font-weight: bold; }
+	</style>
+</head>
+<body>
+
+<section>
+<header>
+	<h1>Registration</h1>
+</header>
+	<div id="error_container"></div>
+	<form id="registration_form" action="">
+	<label for="username">Username:</label>
+	<input id="username" type="text">
+	<label for="password">Password:</label>
+	<input id="password" type="password">
+	<label for="passwordRepeated">Password repeated</label>
+	<input id="passwordRepeated" type="password">
+	<input type="submit" value="Register"> 
+	</form>
+</section>
+<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+<script src="registration.js"></script>
+<script>
+(function($){
+	FINN.registration.init($("#registration_form"), $("#error_container"));
+})(jQuery);
+</script>
+</body>
+</html>
