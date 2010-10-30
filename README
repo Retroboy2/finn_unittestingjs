@@ -2,5 +2,12 @@ JS Unit testing course for dev's @finn.no
 
 The code supplied here is the starting point for the introductry course.
 
+The Bug: "If a user does not enter a username and press the registration button twice, two errors show up. There should only be one error message"
+
+The Task: 
+	- Write a unit test which proves that there is an error
+	- Fix the bug by refactoring the code and using unit testing
+
+Best of luck!
 cheers,
-espen
+The FINN
